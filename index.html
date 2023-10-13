@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center mt-4 mb-4">CADASTRO FORNECEDOR/PRODUTO</h1>
+
+      <form action="">
+        <fieldset>
+          <div class="container mb-4" id="fornecedor">
+            <div class="card">
+              <div class="card-header bg-primary text-white">
+                Dados do Fornecedor
+              </div>
+
+              <div class="card-body">
+                <div class="row">
+                  <div class="mb-3 col-8">
+                    <label for="razaoSocial" class="form-label"
+                      >Razão Social *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="razaoSocial"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-4">
+                    <label for="cnpj" class="form-label">CNPJ *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="cnpj"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-8">
+                    <label for="nomeFantasia" class="form-label"
+                      >Nome Fantasia *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nomeFantasia"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-4">
+                    <label for="inscricaoEstadual" class="form-label"
+                      >Inscrição Estadual</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inscricaoEstadual"
+                    />
+                  </div>
+                </div>
+
+                <div class="row justify-content-between">
+                  <div class="mb-3 col-5">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" />
+                  </div>
+                  <div class="mb-3 col-4">
+                    <label for="inscricaoMunicipal" class="form-label"
+                      >Inscrição Municipal</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inscricaoMunicipal"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-8">
+                    <label for="endereco" class="form-label">Endereço *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="endereco"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-4">
+                    <label for="numero" class="form-label">Número</label>
+                    <input type="text" class="form-control" id="numero" />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-12">
+                    <label for="endereco" class="form-label"
+                      >Complemento *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="endereco"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-4">
+                    <label for="bairro" class="form-label">Bairro *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="bairro"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-4">
+                    <label for="municipio" class="form-label"
+                      >Município *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="municipio"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-4">
+                    <label for="estado" class="form-label">Estado *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="estado"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="mb-3 col-5">
+                    <label for="nomeContato" class="form-label"
+                      >Nome da Pessoa de Contato *</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nomeContato"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-3">
+                    <label for="telefoneContato" class="form-label"
+                      >Telefone *</label
+                    >
+                    <input
+                      type="phone"
+                      class="form-control"
+                      id="telefoneContato"
+                      required
+                    />
+                  </div>
+                  <div class="mb-3 col-4">
+                    <label for="emailContato" class="form-label">Email *</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailContato"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mb-4">
+            <div class="card">
+              <div class="card-header bg-primary text-white">Produtos</div>
+
+              <div class="card-body" data-produtos>
+                <button
+                  type="button"
+                  class="btn btn-success w-100"
+                  id="adicionar-produto"
+                >
+                  Adicionar Produto
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="container mb-4">
+            <div class="card">
+              <div class="card-header bg-primary text-white">Anexos</div>
+
+              <div class="card-body">
+                <div class="card mb-3">
+                  <div class="card-body">
+                    <div class="card">
+                      <div class="card-header">Itens</div>
+                      <div class="card-body" data-anexos></div>
+                    </div>
+                  </div>
+                </div>
+
+                <label for="adicionarAnexo">Incluir Anexo</label>
+                <input type="file" id="adicionarAnexo" />
+              </div>
+            </div>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-success mb-5 w-100"
+            id="submit-button"
+          >
+            Salvar Fornecedor
+          </button>
+        </fieldset>
+      </form>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <h1 class="mb-3">Fornecedor salvo</h1>
+              <div
+                class="btn btn-primary d-flex justify-content-center"
+                id="download-json"
+              >
+                Baixar arquivo JSON
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="module" src="./assets/script/submit.js"></script>
+  <script type="module" src="./assets/script/endereco/adressFill.js"></script>
+  <script
+    type="module"
+    src="./assets/script/produtos/adicionarProduto.js"
+  ></script>
+  <script src="./assets/script/anexos/adicionarAnexo.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+</html>
